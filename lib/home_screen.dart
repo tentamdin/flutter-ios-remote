@@ -28,11 +28,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(Icons.power_settings_new),
         title: Text(
           "Ios Remote",
-          style: TextStyle(
-              color: Theme.of(context).appBarTheme.titleTextStyle.color),
+          // style: TextStyle(
+          //     color: Theme.of(context).appBarTheme.titleTextStyle.color),
         ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () {},
+          )
+        ],
       ),
       body: _screen[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
