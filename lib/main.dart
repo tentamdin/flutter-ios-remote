@@ -13,22 +13,23 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.light().copyWith(
         primaryColor: Colors.white,
-        accentColor: Colors.blue,
+        accentColor: Colors.green,
+        scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(
           titleTextStyle: TextStyle(
             color: Colors.black,
           ),
         ),
       ),
-      darkTheme: ThemeData.dark().copyWith(
-        primaryColor: Colors.black,
-        appBarTheme: AppBarTheme(
-          titleTextStyle: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-      ),
-      themeMode: ThemeMode.system,
+      // darkTheme: ThemeData.dark().copyWith(
+      //   primaryColor: Colors.black,
+      //   appBarTheme: AppBarTheme(
+      //     titleTextStyle: TextStyle(
+      //       color: Colors.white,
+      //     ),
+      //   ),
+      // ),
+      // themeMode: ThemeMode.system,
       home: HomeScreen(),
     );
   }
