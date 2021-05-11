@@ -12,10 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.light().copyWith(
-        primaryColor: Colors.white,
+        primaryColor: Color(0xFFEDEDED),
         accentColor: Colors.green,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Color(0xFFEDEDED),
         appBarTheme: AppBarTheme(
+          elevation: 0,
           titleTextStyle: TextStyle(
             color: Colors.black,
           ),
